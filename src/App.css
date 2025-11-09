@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: 'RuneFont';
-  src: url('/fonts/AncientNovianSota-Regular.ttf') format('truetype');
+  src: url('public\fonts\AncientNovianSota-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
