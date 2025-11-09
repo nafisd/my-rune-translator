@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -31,35 +35,38 @@
 }
 
 @font-face {
-  font-family: 'RuneFont';
-  src: url('public\fonts\AncientNovianSota-Regular.ttf') format('truetype');
+  font-family: 'AncientNovianSota';
+  src: url('/fonts/AncientNovianSota-Regular.ttf') format('truetype'),
+    url('/fonts/AncientNovianSota-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
-.custom-font {
-  font-family: 'RuneFont', sans-serif !important;
+.rune-font {
+  font-family: 'AncientNovianSota', serif !important;
+  letter-spacing: 0.05em;
 }
 
 /* Custom scrollbar */
-textarea::-webkit-scrollbar,
+.textarea::-webkit-scrollbar,
 div::-webkit-scrollbar {
   width: 8px;
 }
 
-textarea::-webkit-scrollbar-track,
+.textarea::-webkit-scrollbar-track,
 div::-webkit-scrollbar-track {
   background: rgba(99, 102, 241, 0.1);
   border-radius: 4px;
 }
 
-textarea::-webkit-scrollbar-thumb,
+.textarea::-webkit-scrollbar-thumb,
 div::-webkit-scrollbar-thumb {
   background: rgba(99, 102, 241, 0.4);
   border-radius: 4px;
 }
 
-textarea::-webkit-scrollbar-thumb:hover,
+.textarea::-webkit-scrollbar-thumb:hover,
 div::-webkit-scrollbar-thumb:hover {
   background: rgba(99, 102, 241, 0.6);
 }
