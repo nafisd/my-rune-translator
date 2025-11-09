@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Copy, Check, RotateCcw } from 'lucide-react';
+import './App.css';
 
 export default function TranslatorApp() {
   const [text, setText] = useState('');
@@ -97,74 +98,6 @@ export default function TranslatorApp() {
           </div>
         </div>
 
-        {/* Info Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-          {/* How to Use */}
-          <div className="bg-slate-800/30 backdrop-blur-sm border border-indigo-500/20 rounded-xl p-5 hover:border-indigo-500/40 transition-colors">
-            <div className="text-3xl mb-3">📖</div>
-            <h3 className="font-semibold text-indigo-300 mb-3 text-lg">
-              How to Use
-            </h3>
-            <ul className="text-sm text-indigo-200 space-y-2">
-              <li className="flex items-start gap-2">
-                <span className="text-indigo-400 mt-0.5">•</span>
-                <span>Type any English text in the input box</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-indigo-400 mt-0.5">•</span>
-                <span>Watch it transform into runes instantly</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-indigo-400 mt-0.5">•</span>
-                <span>Copy and use your runes anywhere</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Font Info */}
-          <div className="bg-slate-800/30 backdrop-blur-sm border border-indigo-500/20 rounded-xl p-5 hover:border-indigo-500/40 transition-colors">
-            <div className="text-3xl mb-3">🎨</div>
-            <h3 className="font-semibold text-indigo-300 mb-3 text-lg">
-              Font Details
-            </h3>
-            <ul className="text-sm text-indigo-200 space-y-2">
-              <li className="flex items-start gap-2">
-                <span className="text-indigo-400 mt-0.5">•</span>
-                <span><strong>Name:</strong> Ancient Novian Sota</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-indigo-400 mt-0.5">•</span>
-                <span><strong>Version:</strong> 001.001</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-indigo-400 mt-0.5">•</span>
-                <span>Supports: A-Z, a-z, 0-9, punctuation</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Setup */}
-          <div className="bg-slate-800/30 backdrop-blur-sm border border-indigo-500/20 rounded-xl p-5 hover:border-indigo-500/40 transition-colors">
-            <div className="text-3xl mb-3">⚙️</div>
-            <h3 className="font-semibold text-indigo-300 mb-3 text-lg">
-              Setup Guide
-            </h3>
-            <ul className="text-sm text-indigo-200 space-y-2">
-              <li className="flex items-start gap-2">
-                <span className="text-indigo-400 mt-0.5">•</span>
-                <span>Place font in <code className="bg-slate-900/50 px-1.5 py-0.5 rounded text-indigo-300">public/fonts/</code></span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-indigo-400 mt-0.5">•</span>
-                <span>Name it: <code className="bg-slate-900/50 px-1.5 py-0.5 rounded text-indigo-300">ancient-novian-sota.ttf</code></span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-indigo-400 mt-0.5">•</span>
-                <span>Deploy to Vercel or Netlify</span>
-              </li>
-            </ul>
-          </div>
-        </div>
 
         {/* Example Text */}
         <div className="mt-6 bg-indigo-950/20 backdrop-blur-sm border border-indigo-500/20 rounded-xl p-6">
@@ -190,45 +123,6 @@ export default function TranslatorApp() {
           </div>
         </div>
       </div>
-
-      {/* CSS for Ancient Novian Sota font */}
-      <style>{`
-        @font-face {
-          font-family: 'AncientNovianSota';
-          src: url('/fonts/ancient-novian-sota.ttf') format('truetype');
-          font-weight: normal;
-          font-style: normal;
-          font-display: swap;
-        }
-        
-        .rune-font {
-          font-family: 'AncientNovianSota', serif;
-          letter-spacing: 0.05em;
-        }
-        
-        /* Custom scrollbar */
-        textarea::-webkit-scrollbar,
-        div::-webkit-scrollbar {
-          width: 8px;
-        }
-        
-        textarea::-webkit-scrollbar-track,
-        div::-webkit-scrollbar-track {
-          background: rgba(99, 102, 241, 0.1);
-          border-radius: 4px;
-        }
-        
-        textarea::-webkit-scrollbar-thumb,
-        div::-webkit-scrollbar-thumb {
-          background: rgba(99, 102, 241, 0.4);
-          border-radius: 4px;
-        }
-        
-        textarea::-webkit-scrollbar-thumb:hover,
-        div::-webkit-scrollbar-thumb:hover {
-          background: rgba(99, 102, 241, 0.6);
-        }
-      `}</style>
     </div>
   );
 }
