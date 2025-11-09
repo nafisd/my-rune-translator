@@ -36,7 +36,7 @@ export default function TranslatorApp() {
       <div
         className="absolute top-0 left-0 right-0 h-96 bg-cover bg-center bg-no-repeat -z-10"
         style={{
-          backgroundImage: 'url(/image/Background1.png)',
+          backgroundImage: 'url(/image/Background3.png)',
           maskImage:
             'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 75%, rgba(0,0,0,0) 100%)',
           WebkitMaskImage:
